@@ -1,0 +1,19 @@
+{
+    "my_details": {
+      "first_name": "Abhigyan",
+      "second_name": "Mehta",
+      "email": "abhigyan.mehta13@gmail.com",
+      "description": "A custom extension for demonstration purposes.",
+      "version": "1.0.0",
+      "author": "Your Name",
+      "photo_path": "/elon4.png"
+    },
+    "role": "Software Engineer",
+    "long_description": "Passionate about building scalable web applications and delightful user experiences. With a strong foundation in both frontend and backend technologies, I aim to create impactful digital solutions that combine performance, accessibility, and design.",
+    "social_links": {
+      "github": "https://github.com/Abhigyan1304/", 
+      "linkedin": "https://www.linkedin.com/in/abhigyan-mehta-484151247/",
+      "twitter": "https://www.instagram.com/abhigyan.mehta/"
+    }
+  }
+  

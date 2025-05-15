@@ -1,0 +1,28 @@
+.bottom-logos {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+    /* background-color: red; */
+    padding: 8px;
+    border-radius: 8px;
+    width: fit-content;
+  }
+  
+  .logo-box {
+    width: 35px;
+    height: 35px;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid #0B77A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .logo-box:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  

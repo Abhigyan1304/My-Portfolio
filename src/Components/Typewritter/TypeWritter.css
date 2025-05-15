@@ -1,0 +1,19 @@
+.typewriter-text {
+    font-family: monospace;
+    font-size: 1.5rem;
+    white-space: pre;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 1ch;
+    animation: blink 0.8s steps(2, start) infinite;
+    color: white;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
