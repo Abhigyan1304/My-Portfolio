@@ -7,7 +7,6 @@ import MyDetails from "./../../../public/Info.json";
 const HomePage = () => {
   return (
     <div className="home-page">
-      <Navbar />
       <div className="left-right-div">
         <div className="main-written-content">
           <div className="heading-text">

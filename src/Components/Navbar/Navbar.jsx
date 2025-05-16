@@ -10,7 +10,7 @@ const Navbar = () => {
         <TypeWritter text={`${MyDetails.my_details.first_name}.`} speed={400} />
       </div>
       <div className="buttons">
-        <a href="/Home" className="btn">
+        <a href="/" className="btn">
           Home
         </a>
         <a href="/About" className="btn">

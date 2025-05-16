@@ -6,7 +6,11 @@
       "description": "A custom extension for demonstration purposes.",
       "version": "1.0.0",
       "author": "Your Name",
-      "photo_path": "/elon4.png"
+      "photo_path": "/elon4.png",
+      "phone": "+91 9717833135",
+      "location_city": "Bangalore",
+      "location_state": "Karnataka",
+      "location_country": "India"
     },
     "role": "Software Engineer",
     "long_description": "Passionate about building scalable web applications and delightful user experiences. With a strong foundation in both frontend and backend technologies, I aim to create impactful digital solutions that combine performance, accessibility, and design.",
