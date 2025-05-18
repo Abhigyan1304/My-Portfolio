@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Lexend:wght@100..900&display=swap');
+.outer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.projects-heading{
+    /* background-color: red; */
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    /* background-color: hotpink; */
+}
+.main-heading{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: rebeccapurple; */
+    font-size: 1.5rem;
+    /* margin-top: 5vh; */
+    
+    font-family: "Lexend", sans-serif;
+}
+.third{
+    color: #C770F0;
+}
+.small-texts{
+    font-family: "Barriecito", system-ui;
+    font-family: "Barriecito", system-ui;
+}
+.projects{
+    /* background-color: red; */
+    width: 90vw;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    /* background-color: red; */
+}
+.project-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gold; */
+    width: 100vw;
+}

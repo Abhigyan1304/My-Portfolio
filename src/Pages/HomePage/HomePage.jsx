@@ -3,6 +3,7 @@ import "./HomePage.css";
 import Navbar from "../../Components/NavBar/Navbar";
 import Links from "../../Components/Links/Links";
 import MyDetails from "./../../../public/Info.json";
+import myCV from "./../../../public/Abhigyan_Mehta_resume.pdf"
 
 const HomePage = () => {
   return (
@@ -16,8 +17,8 @@ const HomePage = () => {
             <p className="description">{MyDetails.long_description}</p>
 
             <div className="button-group">
-              <button className="button first">Hire me!</button>
-              <button className="button">Download CV</button>
+                <a className='button first ancor' href="/contact">Hire me!</a>
+              <a className="button" href={myCV} download={"CV.pdf"}>Download CV</a>
             </div>
           </div>
 

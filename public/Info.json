@@ -18,6 +18,33 @@
       "github": "https://github.com/Abhigyan1304/", 
       "linkedin": "https://www.linkedin.com/in/abhigyan-mehta-484151247/",
       "twitter": "https://www.instagram.com/abhigyan.mehta/"
-    }
+    },
+    "projects": [
+      {
+
+        "name": "project heaing",
+        "description_30_40_words": "lorekneklwenn nweclnew jnwecklew lnweklcnew lwncklew lnwecklnwe lwnclkew neklcwen lnecklewn kwncklewn wencklewn clewnckln welcnew",
+        "github_link": "https://www.w3schools.com/css/css_align.asp",
+        "project_link_if_exists": "https://www.w3schools.com/css/css_align.asp"
+      },{
+
+        "name": "project heaing",
+        "description_30_40_words": "lorekneklwenn nweclnew jnwecklew lnweklcnew lwncklew lnwecklnwe lwnclkew neklcwen lnecklewn kwncklewn wencklewn clewnckln welcnew",
+        "github_link": "https://www.w3schools.com/css/css_align.asp",
+        "project_link_if_exists": "https://www.w3schools.com/css/css_align.asp"
+      },{
+
+        "name": "project heaing",
+        "description_30_40_words": "lorekneklwenn nweclnew jnwecklew lnweklcnew lwncklew lnwecklnwe lwnclkew neklcwen lnecklewn kwncklewn wencklewn clewnckln welcnew",
+        "github_link": "https://www.w3schools.com/css/css_align.asp",
+        "project_link_if_exists": "https://www.w3schools.com/css/css_align.asp"
+      },{
+
+        "name": "project heaing",
+        "description_30_40_words": "lorekneklwenn nweclnew jnwecklew lnweklcnew lwncklew lnwecklnwe lwnclkew neklcwen lnecklewn kwncklewn wencklewn clewnckln welcnew",
+        "github_link": "https://www.w3schools.com/css/css_align.asp",
+        "project_link_if_exists": "https://www.w3schools.com/css/css_align.asp"
+      }
+    ]
   }
   
