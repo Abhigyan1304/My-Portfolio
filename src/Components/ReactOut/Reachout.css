@@ -35,6 +35,7 @@
 
 .subject-input,
 .message-input {
+  color: #F44336;
   padding: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
@@ -46,6 +47,8 @@
 }
 
 .message-input {
+  /* color: black; */
+  /* background-color: #4CAF50; */
   min-height: 140px;
   resize: vertical;
 }

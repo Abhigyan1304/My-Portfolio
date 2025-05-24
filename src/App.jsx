@@ -6,11 +6,13 @@ import HomePage from "./Pages/HomePage/HomePage";
 import Aboutpage from "./Pages/About/Aboutpage";
 import Contact from "./Pages/Contact/Contact";
 import Projects from "./Pages/Projects/Projects";
+import ChatSidebar from "./Components/ChatSidebar/ChartSidebar";
 
 function App() {
   return (
     <Router>
       <Navbar /> {/* This stays on all pages */}
+      <ChatSidebar /> {/* This stays on all pages */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<Aboutpage />} />

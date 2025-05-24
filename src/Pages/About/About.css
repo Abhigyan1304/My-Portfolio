@@ -2,27 +2,15 @@
     /* background-color: green; */
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the top */
+    /* align-items: flex-start; Align items at the top */
     padding: 2rem;
     min-height: 100vh;
     gap: 2rem; /* Space between the card and image */
 }
 
-.profile-card {
-    max-width: 600px;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    /* background: red; */
-    margin-top: 2rem; /* Push the card down a bit */
-    flex: 1; /* Allow it to grow */
-    margin-left: 2rem; /* Additional left margin */
-}
 
 .chatbot-container {
-    background-color: pink;
+    /* background-color: pink; */
     margin-top: 2rem; /* Match the card's top position */
     margin-right: 2rem; /* Right margin */
     align-self: flex-start; /* Align to the top */
@@ -30,74 +18,6 @@
     top: 2rem; /* Stay in position when scrolling */
     height: 500px;
     width: 500px;
-}
-
-.pink-text {
-    color: #ff69b4;
-}
-
-.profile-header h1 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-.profile-content p {
-    line-height: 1.6;
-    margin-bottom: 0.8rem;
-}
-
-.divider {
-    height: 1px;
-    background-color: #e0e0e0;
-    margin: 1.5rem 0;
-}
-
-.hobbies-section p {
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-.hobbies-list {
-    padding-left: 1.5rem;
-}
-
-.hobbies-list li {
-    margin-bottom: 0.5rem;
-}
-
-.quote-section {
-    margin: 1.5rem 0;
-}
-
-.quote-section blockquote {
-    font-style: italic;
-    color: white;
-    border-left: 3px solid #3498db;
-    padding-left: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.quote-author {
-    text-align: right;
-    font-weight: 500;
-}
-
-.skills-section h2 {
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 900px) {
-    .outer {
-        flex-direction: column;
-        align-items: center;
-    }
     
-    .profile-card, .chatbot-container {
-        margin: 1rem 0;
-        width: 90%;
-    }
 }
+

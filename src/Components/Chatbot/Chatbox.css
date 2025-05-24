@@ -1,161 +1,161 @@
-.chatbot-container {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 20px;
-    height: calc(100vh - 90px); 
-    background: #f2f2f7;
-  }
-  
-  .iphone-mockup {
-    margin-right: 100px;
-    position: absolute;
-    width: 300px;
-    height: 600px;
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
-    /* background: red; */
-  }
-  
-  .iphone-body {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    border-radius: 40px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .iphone-screen {
-    width: 100%;
-    height: 100%;
-    background: white;
-    border-radius: 30px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* iPhone Notch Styles */
- /* Previous styles remain the same until .iphone-notch */
+/* ChatSidebar.css */
+.chat-sidebar-container {
+  position: fixed;
+  right: 20px; /* Not touching the edge */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 
-/* iPhone Notch Styles - Smaller version */
-.iphone-notch {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 110px;  /* Slightly narrower */
-    height: 22px;  /* Reduced height */
-    background: #111;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+/* Luxury Toggle Button */
+.sidebar-toggle {
+  background: linear-gradient(145deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 70px;
+  border-radius: 16px 0 0 16px;
+  cursor: pointer;
+  box-shadow: 
+    -5px 5px 15px rgba(59, 130, 246, 0.4),
+    inset 2px 0 4px rgba(255,255,255,0.2);
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar-toggle:hover {
+  transform: translateX(-4px);
+  box-shadow: 
+    -8px 8px 25px rgba(59, 130, 246, 0.6),
+    inset 2px 0 6px rgba(255,255,255,0.3);
+}
+
+.ai-button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  z-index: 3;
+  position: relative;
+}
+
+.ai-icon {
+  font-size: 24px;
+  color: white;
+  filter: drop-shadow(0 2px 8px rgba(255,255,255,0.5));
+  transition: all 0.4s ease;
+}
+
+.toggle-arrow {
+  font-size: 18px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.sidebar-toggle:hover .ai-icon {
+  transform: scale(1.1) rotate(-5deg);
+  filter: drop-shadow(0 4px 12px rgba(255,255,255,0.7));
+}
+
+.sidebar-toggle:hover .toggle-arrow {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+/* Luxury Shine Effect */
+.luxury-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 20%,
+    rgba(255,255,255,0.3) 50%,
+    rgba(255,255,255,0) 80%
+  );
+  transform: translateX(-100%) skewX(-20deg);
+  transition: all 0.8s ease;
+}
+
+.sidebar-toggle:hover .luxury-shine {
+  transform: translateX(200%) skewX(-20deg);
+}
+
+/* Floating Particles */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.8) 1px, transparent 1px),
+    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.6) 1px, transparent 1px);
+  background-size: 10px 10px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.sidebar-toggle:hover .particles {
+  opacity: 0.4;
+  animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Pulsing Glow Effect */
+.chat-sidebar-container:not(.open) .sidebar-toggle {
+  animation: gentle-pulse 4s infinite;
+}
+
+@keyframes gentle-pulse {
+  0%, 100% { 
+    box-shadow: 
+      -5px 5px 15px rgba(59, 130, 246, 0.4),
+      inset 2px 0 4px rgba(255,255,255,0.2);
   }
-  
-  .notch-camera {
-    width: 10px;
-    height: 10px;
-    background: #222;
-    border-radius: 50%;
-    border: 2px solid #444;
+  50% { 
+    box-shadow: 
+      -5px 5px 25px rgba(59, 130, 246, 0.7),
+      inset 2px 0 8px rgba(255,255,255,0.3);
   }
-  
-  .notch-speaker {
-    width: 35px;
-    height: 5px;
-    background: #222;
-    border-radius: 3px;
+}
+
+/* Chatbot Content */
+.sidebar-content {
+  width: 340px;
+  height: 640px;
+  background: transparent;
+  position: relative;
+  margin-right: 10px;
+}
+
+.chatbot-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: elegant-slide 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+@keyframes elegant-slide {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
   }
-  
-  /* Auto-scroll behavior */
-  .messages-container {
-    flex: 1;
-    padding: 40px 15px 70px; /* Adjusted for smaller notch */
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    background-color: #f8f8f8;
-    scroll-behavior: smooth;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  /* Rest of the styles remain the same */
-  
-  /* Chat area */
-  .chat-screen {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
- 
-  .input-container {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-  
-  .input-form {
-    width: 100%;
-  }
-  
-  .message-input {
-    width: 100%;
-    padding: 12px 18px;
-    border-radius: 20px;
-    border: none;
-    background-color: #f2f2f7;
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  /* Message bubbles */
-  .message-bubble {
-    max-width: 75%;
-    padding: 12px 16px;
-    border-radius: 18px;
-    font-size: 15px;
-    line-height: 1.4;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    animation: fadeIn 0.10s ease-out;
-  }
-  
-  .message-bubble.user {
-    align-self: flex-end;
-    background-color: #007AFF;
-    color: white;
-    border-bottom-right-radius: 4px;
-  }
-  
-  .message-bubble.bot {
-    align-self: flex-start;
-    background-color: #FFFFFF;
-    color: #000;
-    border-bottom-left-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  /* Custom scrollbar */
-  .messages-container::-webkit-scrollbar {
-    width: 4px;
-  }
-  
-  .messages-container::-webkit-scrollbar-thumb {
-    background: #c7c7cc;
-    border-radius: 2px;
-  }
+}
